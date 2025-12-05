@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Cell PW IOI - Innovation Meets Action</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css">
+    
+   <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="nav">
+        <span><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Physics_wallah_logo.svg/2040px-Physics_wallah_logo.svg.png" alt="" class="logo-img"></span>
+        <div class="d-none d-md-block">
+            <span class="mx-2"><a href="#">Home</a></span>
+            <span class="mx-2"><a href="#about">About Us</a></span>
+            <span class="mx-2"><a href="#notices">Notices</a></span>
+            <span class="mx-2"><a href="#events">Events</a></span>
+            <span class="mx-2"><a href="#contact-us">Contact Us</a></span>
+        </div>
+        <span>
+            <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#authModal">Login</button>
+        </span>
+    </div>
+    <div class="modal fade" id="authModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Welcome to E-Cell</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul class="nav nav-tabs nav-fill mb-3" id="authTabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="login-tab" data-bs-toggle="tab" data-bs-target="#login-pane" type="button" role="tab" aria-controls="login-pane" aria-selected="true">Login</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="signup-tab" data-bs-toggle="tab" data-bs-target="#signup-pane" type="button" role="tab" aria-controls="signup-pane" aria-selected="false">Sign Up</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="authTabContent">
+                        <div class="tab-pane fade show active" id="login-pane" role="tabpanel" aria-labelledby="login-tab">
+                            <form>
+                                <div class="mb-3">
+                                    <label class="form-label">Username</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="bi bi-person"></i></span>
+                                        <input type="text" class="form-control" placeholder="Enter username">
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Password</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="bi bi-lock"></i></span>
+                                        <input type="password" class="form-control" placeholder="Enter password">
+                                    </div>
+                                </div>
+                                <div class="d-grid gap-2">
+                                    <button type="submit" class="btn btn-primary">Login</button>
+                                </div>
+                                <div class="text-center mt-3">
+                                    <a href="#" class="text-decoration-none small">Forgot password?</a>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tab-pane fade" id="signup-pane" role="tabpanel" aria-labelledby="signup-tab">
+                             <form>
+                                <div class="mb-3">
+                                    <label class="form-label">Full Name</label>
+                                    <input type="text" class="form-control" placeholder="John Doe">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Email address</label>
+                                    <input type="email" class="form-control" placeholder="name@example.com">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Password</label>
+                                    <input type="password" class="form-control">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Confirm Password</label>
+                                    <input type="password" class="form-control">
+                                </div>
+                                <div class="d-grid gap-2">
+                                    <button type="submit" class="btn btn-success">Create Account</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hero">
+        <video class="hero-video" autoplay loop muted playsinline>
+            <source src="https://videos.pexels.com/video-files/3129671/3129671-hd_1920_1080_30fps.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="headline">WELCOME TO E-CELL</h1>
+            <h2>Where Innovation Meets Action.</h2>
+        </div>     
+    </div>
+    <div class="main__action">
+        <div class="main__scroll-box">
+            <a href="#about">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="50" height="50">
+                    <path d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M11.9997 13.1716L7.04996 8.22186L5.63574 9.63607L11.9997 16L18.3637 9.63607L16.9495 8.22186L11.9997 13.1716Z" fill="rgba(28,28,30,1)"></path>
+                </svg>
+            </a>
+        </div>
+    </div>
+    <div class="about-section" id="about">
+        <span class="head-about">ABOUT US</span>
+        <span class="about-content">E-Cell, PW IOI aims to induce an entrepreneurial mindset into the students and air an innovative streak in them. We are here to water the Ideas in the bud and help them bloom into impactful endeavors through networking student enterprises from campus to incubators, seeding funds and angel investors to transform the newly proposed ideas into successful start-ups.</span>
+    </div>
+    <div class="initiatives-title">OUR LEADERS</div>
+    <div id="initiatives">
+        <div class="container-3d noselect">
+            <div class="canvas">
+                <div class="tracker tr-1"></div><div class="tracker tr-2"></div><div class="tracker tr-3"></div><div class="tracker tr-4"></div><div class="tracker tr-5"></div>
+                <div class="tracker tr-6"></div><div class="tracker tr-7"></div><div class="tracker tr-8"></div><div class="tracker tr-9"></div><div class="tracker tr-10"></div>
+                <div class="tracker tr-11"></div><div class="tracker tr-12"></div><div class="tracker tr-13"></div><div class="tracker tr-14"></div><div class="tracker tr-15"></div>
+                <div class="tracker tr-16"></div><div class="tracker tr-17"></div><div class="tracker tr-18"></div><div class="tracker tr-19"></div><div class="tracker tr-20"></div>
+                <div class="tracker tr-21"></div><div class="tracker tr-22"></div><div class="tracker tr-23"></div><div class="tracker tr-24"></div><div class="tracker tr-25"></div>
+                <div class="card-3d">
+                    <p class="prompt">FOUNDER</p>
+                    <div class="title-img title1"><a href="https://www.linkedin.com/in/alakh-pandey-4baaa8227/" class="init-link">DR. ALAKH PANDEY</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="container-3d noselect">
+            <div class="canvas">
+                <div class="tracker tr-1"></div><div class="tracker tr-2"></div><div class="tracker tr-3"></div><div class="tracker tr-4"></div><div class="tracker tr-5"></div>
+                <div class="tracker tr-6"></div><div class="tracker tr-7"></div><div class="tracker tr-8"></div><div class="tracker tr-9"></div><div class="tracker tr-10"></div>
+                <div class="tracker tr-11"></div><div class="tracker tr-12"></div><div class="tracker tr-13"></div><div class="tracker tr-14"></div><div class="tracker tr-15"></div>
+                <div class="tracker tr-16"></div><div class="tracker tr-17"></div><div class="tracker tr-18"></div><div class="tracker tr-19"></div><div class="tracker tr-20"></div>
+                <div class="tracker tr-21"></div><div class="tracker tr-22"></div><div class="tracker tr-23"></div><div class="tracker tr-24"></div><div class="tracker tr-25"></div>
+                <div class="card-3d">
+                    <p class="prompt">CO-FOUNDER</p>
+                    <div class="title-img title2"><a href="https://www.linkedin.com/in/prateek-maheshwari-615962a7/" class="init-link">PRATEEK MAHESWARI</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="container-3d noselect">
+            <div class="canvas">
+                <div class="tracker tr-1"></div><div class="tracker tr-2"></div><div class="tracker tr-3"></div><div class="tracker tr-4"></div><div class="tracker tr-5"></div>
+                <div class="tracker tr-6"></div><div class="tracker tr-7"></div><div class="tracker tr-8"></div><div class="tracker tr-9"></div><div class="tracker tr-10"></div>
+                <div class="tracker tr-11"></div><div class="tracker tr-12"></div><div class="tracker tr-13"></div><div class="tracker tr-14"></div><div class="tracker tr-15"></div>
+                <div class="tracker tr-16"></div><div class="tracker tr-17"></div><div class="tracker tr-18"></div><div class="tracker tr-19"></div><div class="tracker tr-20"></div>
+                <div class="tracker tr-21"></div><div class="tracker tr-22"></div><div class="tracker tr-23"></div><div class="tracker tr-24"></div><div class="tracker tr-25"></div>
+                <div class="card-3d">
+                    <p class="prompt">COO</p>
+                    <div class="title-img title3"><a href="https://www.linkedin.com/in/gopal-sharma-344290293/" class="init-link">GOPAL SHARMA</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="initiatives-title" id="notices">NOTICE BOARD & UPDATES</div>
+    <div class="container mb-5">
+        <div class="notice-board-wrapper">
+            <div class="notice-header">
+                <span class="bi bi-megaphone-fill me-2"></span> Latest Announcements
+            </div>
+            
+            <div class="notice-list">
+                
+                <div class="notice-item">
+                    <div class="notice-date">
+                        <span class="day">15</span>
+                        <span class="month">NOV</span>
+                    </div>
+                    <div class="notice-content">
+                        <div class="d-flex align-items-center mb-1">
+                            <h5 class="notice-heading mb-0">Assessment Report Released</h5>
+                            <span class="badge bg-danger ms-2 blink-soft">NEW</span>
+                        </div>
+                        <p class="notice-text">The detailed assesment report of the exams are available now.</p>
+                    </div>
+                    <div class="notice-action">
+                        <a href="/assessment-report.pdf" download class="btn-download">
+                            <i class="bi bi-file-earmark-pdf-fill"></i> Download PDF
+                        </a>
+                    </div>
+                </div>
+   <div class="notice-item">
+                    <div class="notice-date">
+                        <span class="day">05</span>
+                        <span class="month">DEC</span>
+                    </div>
+                    <div class="notice-content">
+                        <div class="d-flex align-items-center mb-1">
+                            <h5 class="notice-heading mb-0">Assessment Report 2.0 Released</h5>
+                            <span class="badge bg-danger ms-2 blink-soft">NEW</span>
+                        </div>
+                        <p class="notice-text">The detailed assesment report of the phase 2 exams are available now.</p>
+                    </div>
+                    <div class="notice-action">
+                        <a href="/assessment-report.pdf" download class="btn-download">
+                            <i class="bi bi-file-earmark-pdf-fill"></i> Download PDF
+                        </a>
+                    </div>
+                </div>
+
+                <div class="notice-item">
+                    <div class="notice-date">
+                        <span class="day">17</span>
+                        <span class="month">DEC</span>
+                    </div>
+                    <div class="notice-content">
+                        <h5 class="notice-heading">Aarambh Season 10.0</h5>
+                        <p class="notice-text">Apply for Aarambh to get mentored by the top Industry Leaders.</p>
+                    </div>
+                    <div class="notice-action">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSc_eYBcKN4LD-RL47NmnPQcb12mZWhYchFRJjcib9rIgOpxwA/viewform?usp=header
+" class="btn-download btn-view">
+                            <i class="bi bi-link-45deg"></i> Apply Now
+                        </a>
+                    </div>
+                </div>
+  <div class="notice-item">
+                    <div class="notice-date">
+                        <span class="day">14</span>
+                        <span class="month">OCT</span>
+                    </div>
+                    <div class="notice-content">
+                        <h5 class="notice-heading">Innovation Wall 2025</h5>
+                        <p class="notice-text">Download to see the official winner of this Season.</p>
+                    </div>
+                    <div class="notice-action">
+                        <a href="/WhatsApp Image 2025-10-12 at 00.16.26.jpeg" download class="btn-download">
+                            <i class="bi bi-image-fill"></i> Get Image
+                        </a>
+                    </div>
+                </div>
+                <div class="notice-item">
+                    <div class="notice-date">
+                        <span class="day">17</span>
+                        <span class="month">DEC</span>
+                    </div>
+                    <div class="notice-content">
+                        <h5 class="notice-heading">Aarambh Season 10.0</h5>
+                        <p class="notice-text">Apply for Aarambh to get mentored by the top Industry Leaders.</p>
+                    </div>
+                    <div class="notice-action">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSc_eYBcKN4LD-RL47NmnPQcb12mZWhYchFRJjcib9rIgOpxwA/viewform?usp=header
+" class="btn-download btn-view">
+                            <i class="bi bi-link-45deg"></i> Apply Now
+                        </a>
+                    </div>
+                </div>
+
+              
+
+            </div>
+        </div>
+    </div>
+    <div class="events-section">
+        <div class="initiatives-title" id="events">UPCOMING EVENTS</div>
+        <div class="carousel-wrapper">
+            <div class="carousel-track">
+                <div class="event-card">
+                    <img src="https://media.licdn.com/dms/image/v2/D4D22AQHaNKrZHW427g/feedshare-shrink_2048_1536/B4DZaAfFYLG4Ao-/0/1745912370330?e=1766620800&v=beta&t=gML9QqHD83_iu0gThhHQZdUVorJKNTD0e85Bv8mq7sU" alt="Startup Pitch Competition" class="event-image">
+                    <div class="event-content">
+                        <div class="event-date"><i class="bi bi-calendar-event"></i> December 17, 2025</div>
+                        <div class="event-title">Aarambh 10.0</div>
+                        <div class="event-description">Get Guidance from Top 0.1% Mentors</div>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <img src="https://media.licdn.com/dms/image/v2/D5622AQEjUILMTMH2sA/feedshare-shrink_2048_1536/B56ZnSwMZHG4Aw-/0/1760177489689?e=1766620800&v=beta&t=V30InqrUeSMv6ZqOW7BC9HWsB-DjMoUPCQB2lZguryc" alt="Entrepreneurship Workshop" class="event-image">
+                    <div class="event-content">
+                        <div class="event-date"><i class="bi bi-calendar-event"></i> October 14, 2025</div>
+                        <div class="event-title">Innovation Wall 2025</div>
+                        <div class="event-description">Hustle & Learn about the real business mindset.</div>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <img src="https://static.pw.live/5eb393ee95fab7468a79d189/GLOBAL_CMS/c2efa77c-8c71-4635-90a7-31dfdf991bce.webp" alt="Innovation Hackathon" class="event-image">
+                    <div class="event-content">
+                        <div class="event-date"><i class="bi bi-calendar-event"></i> January 05, 2025</div>
+                        <div class="event-title">Innovation Hackathon</div>
+                        <div class="event-description">24-hour coding and business model challenge.</div>
+                    </div>
+                </div>
+                 <div class="event-card">
+                    <img src="https://img-cdn.publive.online/fit-in/1200x675/filters:format(webp)/entrackr/media/media_files/2025/09/07/physicswallah-2025-09-07-12-39-48.png" alt="Innovation Hackathon" class="event-image">
+                    <div class="event-content">
+                        <div class="event-date"><i class="bi bi-calendar-event"></i> January 27, 2025</div>
+                        <div class="event-title">SeedX</div>
+                        <div class="event-description">Get Fundings and Expand your Idea.</div>
+                    </div>
+                </div>
+                 <div class="event-card">
+                    <img src="https://media.licdn.com/dms/image/v2/D5622AQHSsjyyxcl_Uw/feedshare-shrink_2048_1536/B56ZjDMYuvHQA4-/0/1755621462731?e=1766620800&v=beta&t=bSh-NoBpmLvW9MSd9Nvx1-86tWmOgLkjrTC35wFMgP4" alt="Startup Pitch" class="event-image">
+                    <div class="event-content">
+                        <div class="event-date"><i class="bi bi-calendar-event"></i> August 25, 2025</div>
+                        <div class="event-title">Orientation Week</div>
+                        <div class="event-description">Exciting First week of our new lucknow campus.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="idea-section" id="contact-us">
+        <div class="initiatives-title">SUBMIT YOUR IDEA</div>
+        <div class="idea-form-container">
+            <form action="#" method="POST">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group-custom">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group-custom">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group-custom">
+                    <label for="idea-title">Startup/Idea Title</label>
+                    <input type="text" id="idea-title" name="idea-title" placeholder="e.g. AI-powered Education Tool" required>
+                </div>
+                
+                <div class="form-group-custom">
+                    <label for="description">Detailed Description</label>
+                    <textarea id="description" name="description" placeholder="Describe the problem you are solving and your proposed solution..." rows="6" required></textarea>
+                </div>
+                
+                <button type="submit" class="idea-submit-btn">Submit Idea</button>
+            </form>
+        </div>
+    </div>
+    <div class="initiatives-title">COLLABORATIONS</div>
+    <div style="background-color: #f0f0f0; padding: 20px 0;">
+        <marquee behavior="scroll" direction="left" scrollamount="10">
+            <img src="https://play-lh.googleusercontent.com/NN8G4Xc03GSv2_Tu-icuoeOwSo1xoZ4ouzUl24fVlwm5OeIAo7gV0zS1dVRWgCay-BU" alt="" class="brand">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAvVBMVEX////zUSN/uQICpO//uQH///39//r//fLr///tsxD//+Z5qQDxUSX//9wAkdHu///+/+vQjXz/9O1pudHQjXPR+PnTSx1/tAD7+coAo/HhUCXu+dP5//oAm+N4rgCAuAGnwm0Ak9e2QRXESCHBiXv/9fLu+NlvnwBzmgDVUivHiYT/9Pbr+stwqAB4pADAinLCkGfVs6Srv3T9+P/3/+/J+fr+87f7+MoAgbkNjslqqsb+78TqvD7frCJssME4QYTWAAACUElEQVR4nO3dXXPSQBSA4ZV4diEFkqKtDa6iVuoH9atUW9T6/39WN9DYXtSZwslKyLxvh7A3zeyTXTq92cEYIiIiIiIiIiIiIiIiIiIiIqKGJlJetj2LmMntpXKuNWh6d+fZfmFDUz5Lqe6irAbJv2bolK0+gTZPVeXRjOLeHKo6fjsVL3Lybk/V+zzaKrrDvqrx/sh7sc9fdjqTyaTTWb6tPZjspTGFjzQFoQ1rWAo1Idyu0CPceWH7d2n7he3fpQgRIkSIECFChAgRIkSIECFChAgRIkSIECFChAgRIkSIECFChAgRIkSIECFChAgRIkSIEOEGwv7yZ+1Bf7w/tV7saWOF4o7Hqj58nDln5PTTM1Wf4wntl6eqvn6biTfm5OyVqjMXbZeKG2nKB84Yn4lLc12NPU8szhqTeTeaWk1iI07x78Nba3DbvGTm4aOoI8Zbw/IY9ebnr8XMZEnzmW4WNWnuvbfi2YffFevDAs7n/ly1hOFe8YgHur4fZOfOzPMfRxt3EV6DeH9Ls8vXNw1vXg8aVG/Dxc+udWJ//e6puor3P013mBRFkRSr64MHSTV48SQzYZMd9R6r6g1iCsNEN6lIdkeoqBJeINx5Yft3KUKECBEiRIgQIUKECBEiRIgQIUKECBEiRIgQIUKECBEiRIgQIUKECBEiRIgQIUKECBEiRPh/hZxGQBhTuFAJkzp3aZyDpNnlYqhp8WclvKrhdF6krwXOuqqy8nisiEsHqtKIR53rqcHf6UxERERERERERERERERERERERERb7hpQ1W08w53kmAAAAABJRU5ErkJggg==" alt="" class="brand">
+            <img src="https://media.licdn.com/dms/image/v2/C4E0BAQGrqkmRcOH4KQ/company-logo_200_200/company-logo_200_200/0/1645014281175/ibm_cloud_logo" alt="" class="brand">
+            <img src="https://m.media-amazon.com/images/I/51HCHFclmmL.jpg" alt="" class="brand">
+            <img src="https://yt3.googleusercontent.com/s5hlNKKDDQWjFGzYNnh8UeOW2j2w6id-cZGx7GdAA3d5Fu7zEi7ZMXEyslysuQUKigXNxtAB=s900-c-k-c0x00ffffff-no-rj" alt="" class="brand">
+            <img src="https://yt3.googleusercontent.com/btm1_PK-7VRUr9GY2D0UV_2XfbUZPBjghyptjSO1crsfN86HyTYDWPmUbq7JxC3H0Lxe_s067nA=s900-c-k-c0x00ffffff-no-rj" alt="" class="brand">
+            <img src="https://media.licdn.com/dms/image/v2/C4E0BAQGrqkmRcOH4KQ/company-logo_200_200/company-logo_200_200/0/1645014281175/ibm_cloud_logo?e=2147483647&v=beta&t=QlRXXpcQ9eXqBgtKbohgVxIKoCte9dcWCerC8I2b9bs" alt="" class="brand">
+            <img src="https://media.fashionnetwork.com/cdn-cgi/image/fit=contain,width=1000,height=1000,format=auto/m/e17a/0110/8b0f/59b8/7b23/9a1f/8091/f7f3/d13d/bd8d/bd8d.jpeg" alt="" class="brand">
+        </marquee>
+    </div>
+    <button class="chatbot-toggler">
+        <span class="bi bi-chat-dots-fill"></span>
+        <span class="bi bi-x-lg"></span>
+    </button>
+    <div class="chatbot">
+        <header>
+            <h2>E-Cell AI Assistant</h2>
+            <span class="bi bi-x-lg"></span>
+        </header>
+        <ul class="chatbox">
+            <li class="chat incoming">
+                <span class="bi bi-robot"></span>
+                <p>Hi there! I'm the E-Cell AI. Ask me about our upcoming events, leadership, or vision!</p>
+            </li>
+        </ul>
+        <div class="chat-input">
+            <textarea placeholder="Enter a message..." required></textarea>
+            <span id="send-btn" class="bi bi-send-fill"></span>
+        </div>
+    </div>
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="footer-logo">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Physics_wallah_logo.svg/2040px-Physics_wallah_logo.svg.png" alt="Logo" style="height: 50px;">
+                        <h4 class="text-white mt-3">E-Cell PW IOI</h4>
+                    </div>
+                    <p class="text-muted mt-3">Fostering innovation and entrepreneurship among students. Transforming ideas into impactful ventures.</p>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 class="text-white mb-3">Quick Links</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#initiatives">Leaders</a></li>
+                        <li><a href="#events">Events</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="text-white mb-3">Contact Us</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li class="mb-2"><i class="bi bi-geo-alt me-2"></i> PW IOI Campus, Bangalore</li>
+                        <li class="mb-2"><i class="bi bi-envelope me-2"></i> ecell@pw.live</li>
+                        <li class="mb-2"><i class="bi bi-telephone me-2"></i> +91 99999 99999</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="text-white mb-3">Follow Us</h5>
+                    <div class="social-links mt-3">
+                        <a href="https://www.linkedin.com/company/pw-school-of-startups/"><i class="bi bi-linkedin"></i></a>
+                        <a href="https://www.instagram.com/pwschoolofstartups/"><i class="bi bi-instagram"></i></a>
+                        <a href="https://x.com/PhysicswallahAP"><i class="bi bi-twitter"></i></a>
+                        <a href="https://www.youtube.com/@PW-IOI"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-top border-secondary pt-4 mt-4 text-center">
+                <p class="text-muted mb-0">&copy; 2024 E-Cell PW IOI. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // --- CHATBOT LOGIC ---
+        
+        // Configuration
+        const API_KEY = "AIzaSyDIQYYHW9oicveZ6FTK7E4Bv24B4BNApvk"; 
+        const MODEL_NAME = "gemini-2.5-flash";
+        
+        const chatbotToggler = document.querySelector(".chatbot-toggler");
+        const closeBtn = document.querySelector(".chatbot header span");
+        const chatbox = document.querySelector(".chatbox");
+        const chatInput = document.querySelector(".chat-input textarea");
+        const sendChatBtn = document.querySelector(".chat-input span");
+
+        let userMessage = null;
+        const inputInitHeight = chatInput.scrollHeight;
+
+        // 1. Gather Context from the Website
+        // This makes the bot "smart" about your specific page content
+        const getPageContext = () => {
+            const aboutText = document.querySelector('.about-content').innerText;
+            const leaders = Array.from(document.querySelectorAll('#initiatives .prompt')).map(el => el.innerText).join(", ");
+            const events = Array.from(document.querySelectorAll('.event-card')).map(card => {
+                const title = card.querySelector('.event-title').innerText;
+                const date = card.querySelector('.event-date').innerText;
+                return `${title} on ${date}`;
+            }).join("; ");
+
+            return `
+            You are the AI assistant for the E-Cell PW IOI website. 
+            Here is the website content to answer questions:
+            
+            ABOUT US: ${aboutText}
+            
+            LEADERSHIP ROLES VISIBLE: ${leaders}
+            
+            UPCOMING EVENTS: ${events}
+
+            NEW FEATURE: We have an 'Idea Submission' form on the main page where students can submit their startup ideas directly to us.
+            
+            Be helpful, encouraging, and brief. If asked about something not here, say you don't have that info but suggest contacting the E-Cell team.
+            `;
+        };
+
+        const createChatLi = (message, className) => {
+            const chatLi = document.createElement("li");
+            chatLi.classList.add("chat", className);
+            let chatContent = className === "outgoing" 
+                ? `<p></p>` 
+                : `<span class="bi bi-robot"></span><p></p>`;
+            chatLi.innerHTML = chatContent;
+            chatLi.querySelector("p").textContent = message;
+            return chatLi;
+        }
+
+        const generateResponse = async (chatElement) => {
+            const messageElement = chatElement.querySelector("p");
+            const contextText = getPageContext();
+
+            // Constructing the URL
+            const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/${MODEL_NAME}:generateContent?key=${API_KEY}`;
+
+            // SIMPLIFIED PAYLOAD: Prepending context to prompt to avoid API versioning issues with 'systemInstruction'
+            const finalPrompt = `${contextText}\n\nUser Query: ${userMessage}`;
+
+            const requestOptions = {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({
+                    contents: [{ 
+                        role: "user", 
+                        parts: [{ text: finalPrompt }] 
+                    }],
+                    // Safety settings to prevent empty responses due to false positives
+                    safetySettings: [
+                        { category: "HARM_CATEGORY_HARASSMENT", threshold: "BLOCK_NONE" },
+                        { category: "HARM_CATEGORY_HATE_SPEECH", threshold: "BLOCK_NONE" },
+                        { category: "HARM_CATEGORY_SEXUALLY_EXPLICIT", threshold: "BLOCK_NONE" },
+                        { category: "HARM_CATEGORY_DANGEROUS_CONTENT", threshold: "BLOCK_NONE" }
+                    ]
+                })
+            }
+
+            try {
+                messageElement.textContent = "Thinking...";
+                
+                // Add Timeout to prevent infinite "Thinking"
+                const controller = new AbortController();
+                const timeoutId = setTimeout(() => controller.abort(), 10000); // 10 second timeout
+
+                const response = await fetch(API_URL, { 
+                    ...requestOptions, 
+                    signal: controller.signal 
+                });
+                clearTimeout(timeoutId);
+
+                const data = await response.json();
+                
+                // Detailed Error Handling
+                if (!response.ok) {
+                    throw new Error(data.error?.message || `API Error: ${response.status}`);
+                }
+
+                // Check if candidates exist (safety filters might return empty candidates)
+                if (!data.candidates || data.candidates.length === 0) {
+                     // Check for prompt feedback block
+                     if (data.promptFeedback && data.promptFeedback.blockReason) {
+                        throw new Error(`Blocked by AI safety filter: ${data.promptFeedback.blockReason}`);
+                     }
+                     throw new Error("No response generated by AI.");
+                }
+
+                const botResponse = data.candidates[0].content.parts[0].text;
+                messageElement.textContent = botResponse.trim();
+
+            } catch (error) {
+                // Better Error Display
+                if (error.name === 'AbortError') {
+                    messageElement.textContent = "Error: Request timed out. Please try again.";
+                } else {
+                    messageElement.textContent = `Error: ${error.message}`;
+                }
+                messageElement.style.color = "#ff4444"; // Red text for visibility
+                console.error("Chatbot Error:", error);
+            } finally {
+                chatbox.scrollTo(0, chatbox.scrollHeight);
+            }
+        }
+
+        const handleChat = () => {
+            userMessage = chatInput.value.trim();
+            if(!userMessage) return;
+
+            // Clear input
+            chatInput.value = "";
+            chatInput.style.height = `${inputInitHeight}px`;
+
+            // Append User Message
+            chatbox.appendChild(createChatLi(userMessage, "outgoing"));
+            chatbox.scrollTo(0, chatbox.scrollHeight);
+
+            // Show "Thinking..." Message
+            setTimeout(() => {
+                const incomingChatLi = createChatLi("Thinking...", "incoming");
+                chatbox.appendChild(incomingChatLi);
+                chatbox.scrollTo(0, chatbox.scrollHeight);
+                generateResponse(incomingChatLi);
+            }, 600);
+        }
+
+        // Event Listeners
+        chatInput.addEventListener("input", () => {
+            chatInput.style.height = `${inputInitHeight}px`;
+            chatInput.style.height = `${chatInput.scrollHeight}px`;
+        });
+
+        chatInput.addEventListener("keydown", (e) => {
+            if(e.key === "Enter" && !e.shiftKey && window.innerWidth > 800) {
+                e.preventDefault();
+                handleChat();
+            }
+        });
+
+        sendChatBtn.addEventListener("click", handleChat);
+        chatbotToggler.addEventListener("click", () => document.body.classList.toggle("show-chatbot"));
+        closeBtn.addEventListener("click", () => document.body.classList.remove("show-chatbot"));
+    </script>
+</body>
+</html>
