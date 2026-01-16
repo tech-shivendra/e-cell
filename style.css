@@ -16,6 +16,21 @@
             margin: 0px;
             padding: 0px;
         }
+        .auth-modal {
+  border-radius: 14px;
+  padding: 10px;
+}
+
+.auth-switch {
+  color: #000;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+          .auth-switch:hover {
+          text-decoration: underline;
+    }
+  
         .hero {
             position: relative;
             min-height: 480px;
@@ -51,6 +66,32 @@
             background: linear-gradient(rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.6) 100%);
             z-index: 1;
         }
+        /* From Uiverse.io by mrhyddenn */ 
+.hero-cta {
+  padding: 10px 20px;
+  border: none;
+  font-size: 17px;
+  color: #fff;
+  border-radius: 7px;
+  letter-spacing: 4px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.5s;
+  transition-property: box-shadow;
+  margin-top: 120px;
+}
+
+.hero-cta {
+  background: rgb(0,140,255);
+ 
+}
+
+.hero-cta:hover {
+  box-shadow: 0 0 5px rgb(0,140,255),
+              0 0 25px rgb(0,140,255),
+              0 0 50px rgb(0,140,255),
+              0 0 100px rgb(0,140,255);
+}
         .hero-content {
             text-align: center;
             position: relative;
@@ -138,118 +179,107 @@
             margin-top: 100px;
             margin-bottom: 50px;
         }
-        .init-link{
-            position: absolute;
-            bottom: 20px;
-            color: black;
-            border-radius: 20px;
-            text-decoration: none;
-            font-size: smaller;
-            background-color: white;
-            padding: 5px 15px;
-            z-index: 50;
-        }
-        
-        
-        .noselect {
-            -webkit-touch-callout: none;
-            -webkit-user-select: none;
-            -khtml-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-        }
-        .container-3d {
-            position: relative;
-            width: 280px;
-            height: 380px;
-            transition: 200ms;
-        }
-        .container-3d:active { width: 180px; height: 245px; }
-        .card-3d {
-            position: absolute;
-            inset: 0;
-            z-index: 0;
+        .leaders{
             display: flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 20px;
-            transition: 700ms;
-           background: linear-gradient(to right, #e0eafc, #cfdef3); 
-        }
-        .title-img {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-position: center;
-            background-size: cover;
-            border-radius: 10px;
-            height: 100%;
-            width: 100%;
-            opacity: 0;
-            transition-duration: 300ms;
-            transition-timing-function: ease-in-out;
-            transition-delay: 100ms;
-            position: absolute;
-            z-index: 10;
-        }
-        .title4{ background-image: url(https://media.licdn.com/dms/image/v2/D5622AQE1QjqLb_3X7g/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1732809606020?e=1766620800&v=beta&t=fe4ZNWBP83J_c1TZ3ZsU3xrWoniLQkToNaw3bOAFxvM); }
-        .title2{ background-image: url(https://thecsruniverse.com/adminxsafe/uploads/Physicswallah%20Prateek%20Maheshwari.jpeg); }
-        .title1{ background-image: url(https://media.fortuneindia.com/fortune-india/import/2024-09-20/iltl3t07/Alakh-Pandey00168-copy.jpg?w=640&auto=format,compress&q=80); }
-        .title3{ background-image: url(https://media.licdn.com/dms/image/v2/D4E03AQGflG0GWRKmxg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1695975510027?e=1766620800&v=beta&t=dwfaYtGZ_EmEVfZ7IUFEbvNeCSwqTfok2BhcpFPvJm4); }
-        
-        .tracker:hover ~ .card-3d .title-img { opacity: 1; }
-        .prompt {
-            z-index: 20;
-            font-size: 30px;
-            font-weight: bold;
-            transition: 300ms ease-in-out;
-            position: absolute;
-            max-width: 210px;
-            color:white;
-            text-align: center;
-        }
-        .tracker { position: absolute; z-index: 200; width: 100%; height: 100%; }
-        .tracker:hover { cursor: pointer; }
-        .tracker:hover ~ .card-3d .prompt { opacity: 0; }
-        .tracker:hover ~ .card-3d { transition: 300ms; filter: brightness(1.1); }
-        .container-3d:hover .card-3d::before { transition: 200ms; content: ''; opacity: 80%; }
-        
-        .canvas {
-            perspective: 800px;
-            inset: 0;
-            z-index: 200;
-            position: absolute;
-            display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            grid-template-rows: repeat(5, 1fr);
-            width: 100%;
-            height: 100%;
-        }
-        .card-3d::before {
-            content: '';
-            background: linear-gradient(43deg, rgb(51, 52, 55) 0%, rgb(118, 102, 117) 46%, rgb(44, 40, 33) 100%);
-            filter: blur(2rem);
-            opacity: 30%;
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            z-index: -1;
-            transition: 200ms;
+           justify-content: center;
+           
         }
        
-        .tr-1 { grid-area: 1 / 1; } .tr-2 { grid-area: 1 / 2; } .tr-3 { grid-area: 1 / 3; } .tr-4 { grid-area: 1 / 4; } .tr-5 { grid-area: 1 / 5; }
-        .tr-6 { grid-area: 2 / 1; } .tr-7 { grid-area: 2 / 2; } .tr-8 { grid-area: 2 / 3; } .tr-9 { grid-area: 2 / 4; } .tr-10 { grid-area: 2 / 5; }
-        .tr-11 { grid-area: 3 / 1; } .tr-12 { grid-area: 3 / 2; } .tr-13 { grid-area: 3 / 3; } .tr-14 { grid-area: 3 / 4; } .tr-15 { grid-area: 3 / 5; }
-        .tr-16 { grid-area: 4 / 1; } .tr-17 { grid-area: 4 / 2; } .tr-18 { grid-area: 4 / 3; } .tr-19 { grid-area: 4 / 4; } .tr-20 { grid-area: 4 / 5; }
-        .tr-21 { grid-area: 5 / 1; } .tr-22 { grid-area: 5 / 2; } .tr-23 { grid-area: 5 / 3; } .tr-24 { grid-area: 5 / 4; } .tr-25 { grid-area: 5 / 5; }
+        /* From Uiverse.io by suleymanlaarabidev */ 
+.card {
+  width: 240px;
+  height: 284px;
+ background-color: #212529;
+  transition: all 0.4s;
+  border-radius: 10px;
+  
+  font-size: 30px;
+  font-weight: 900;
+  margin: 40px;
+}
+.t1{
+ color: #FF9933;
+}
+.t2{
+       color: #FFFFFF;
+}
+.t3{
+    color: #138808;
+}
 
-        .tr-1:hover ~ .card-3d { transform: rotateX(20deg) rotateY(-10deg); }
-        .tr-2:hover ~ .card-3d { transform: rotateX(20deg) rotateY(-5deg); }
-        .tr-3:hover ~ .card-3d { transform: rotateX(20deg) rotateY(0deg); }
-        .tr-4:hover ~ .card-3d { transform: rotateX(20deg) rotateY(5deg); }
-        .tr-5:hover ~ .card-3d { transform: rotateX(20deg) rotateY(10deg); }
-        .tr-13:hover ~ .card-3d { transform: rotateX(0deg) rotateY(0deg); }
+.card:hover {
+  border-radius: 15px;
+  cursor: pointer;
+  transform: scale(1.2);
+  box-shadow: 0px 0px 10px 5px  rgba(0, 0, 0, 0.705);
+
+}
+.card1:hover {
+  background: #FF9933;
+}
+.card2:hover {
+   background: #FFFFFF;
+}
+.card3:hover {
+   background: #138808;
+}
+
+
+.first-content {
+  height: 100%;
+  width: 100%;
+  transition: all 0.4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  border-radius: 15px;
+}
+
+.card:hover .first-content {
+  height: 0px;
+  opacity: 0;
+}
+
+.second-content {
+  height: 0%;
+  width: 100%;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  transition: all 0.4s;
+  font-size: 0px;
+  transform: rotate(90deg) scale(-1);
+}
+
+.card1:hover .second-content {
+  opacity: 1;
+  height: 100%;
+  padding: 20px;
+  font-size: 1.3rem;
+  transform: rotate(0deg);
+  color: white;
+}
+.card2:hover .second-content {
+  opacity: 1;
+  height: 100%;
+  padding: 20px;
+  font-size: 1.3rem;
+  transform: rotate(0deg);
+  color: blue;
+}
+.card3:hover .second-content {
+  opacity: 1;
+  height: 100%;
+  padding: 20px;
+  font-size: 1.3rem;
+  transform: rotate(0deg);
+  color: white;
+}
+
+        
 .notice-board-wrapper {
     background: rgba(255, 255, 255, 0.03); 
     backdrop-filter: blur(10px);
@@ -385,6 +415,16 @@
         flex-direction: column;
         align-items: flex-start;
     }
+    .hero h1{
+        font-size: 2rem;
+    }
+    .hero h2{
+         font-size: 1rem;
+    }
+    .card-title{
+            font-size: 25px;
+        }
+            
     .notice-date {
         flex-direction: row;
         gap: 10px;
@@ -403,10 +443,25 @@
         justify-content: center;
     }
 }
-        .events-section { margin: 150px 0; overflow: hidden; position: relative; }
-        .carousel-wrapper { overflow: hidden; position: relative; padding: 40px 0; }
-        .carousel-track { display: flex; gap: 30px; animation: scroll-carousel 30s linear infinite; width: max-content; }
-        .carousel-wrapper:hover .carousel-track { animation-play-state: paused; }
+        .events-section { 
+            margin: 150px 0; 
+            overflow: hidden;
+             position: relative; 
+            }
+        .carousel-wrapper { 
+            overflow: hidden; 
+            position: relative; 
+            padding: 40px 0;
+            background-color: #FFFFFF;
+        }
+    
+        .carousel-track {
+             display: flex;
+              gap: 30px;
+               animation: scroll-carousel 30s linear infinite; width: max-content;
+             }
+        .carousel-wrapper:hover .carousel-track { animation-play-state: paused;
+         }
         @keyframes scroll-carousel { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
         
         .event-card {
@@ -436,173 +491,122 @@
 }
 
         .brand{ height: 80px; width: auto; margin: 0 40px; object-fit: contain;}
-        
-        
-        .chatbot-toggler {
-            position: fixed;
-            bottom: 30px;
-            right: 35px;
-            outline: none;
-            border: none;
-            height: 60px;
-            width: 60px;
-            display: flex;
-            cursor: pointer;
-            align-items: center;
-            justify-content: center;
-            border-radius: 50%;
-            background: #724ae8;
-            transition: all 0.2s ease;
-            z-index: 9999;
-            box-shadow: 0 0 15px rgba(0,0,0,0.4);
-        }
-        .chatbot-toggler span {
-            color: #fff;
-            position: absolute;
-            font-size: 1.7rem;
-        }
-        .chatbot-toggler span:last-child,
-        body.show-chatbot .chatbot-toggler span:first-child  {
-            opacity: 0;
-        }
-        body.show-chatbot .chatbot-toggler span:last-child {
-            opacity: 1;
-        }
-        .chatbot {
-            position: fixed;
-            right: 35px;
-            bottom: 100px;
-            width: 420px;
-            background: #fff;
-            border-radius: 15px;
-            overflow: hidden;
-            opacity: 0;
-            pointer-events: none;
-            transform: scale(0.5);
-            transform-origin: bottom right;
-            box-shadow: 0 0 128px 0 rgba(0,0,0,0.1),
-                        0 32px 64px -48px rgba(0,0,0,0.5);
-            transition: all 0.1s ease;
-            z-index: 9999;
-        }
-        body.show-chatbot .chatbot {
-            opacity: 1;
-            pointer-events: auto;
-            transform: scale(1);
-        }
-        .chatbot header {
-            padding: 16px 0;
-            position: relative;
-            text-align: center;
-            color: #fff;
-            background: #724ae8;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        .chatbot header span {
-            position: absolute;
-            right: 15px;
-            top: 50%;
-            display: none;
-            cursor: pointer;
-            transform: translateY(-50%);
-        }
-        .chatbot header h2 {
-            font-size: 1.4rem;
-            margin: 0;
-            font-weight: 600;
-        }
-        .chatbox {
-            overflow-y: auto;
-            height: 400px;
-            padding: 30px 20px 100px;
-        }
-        .chatbox .chat {
-            display: flex;
-            list-style: none;
-        }
-        .chatbox .outgoing {
-            margin: 20px 0;
-            justify-content: flex-end;
-        }
-        .chatbox .incoming span {
-            width: 32px;
-            height: 32px;
-            color: #fff;
-            background: #724ae8;
-            text-align: center;
-            line-height: 32px;
-            border-radius: 4px;
-            margin: 0 10px 7px 0;
-            align-self: flex-end;
-        }
-        .chatbox .chat p {
-            white-space: pre-wrap;
-            padding: 12px 16px;
-            border-radius: 10px 10px 0 10px;
-            max-width: 75%;
-            color: #fff;
-            font-size: 0.95rem;
-            background: #724ae8;
-        }
-        .chatbox .incoming p {
-            border-radius: 10px 10px 10px 0;
-            color: #000;
-            background: #f2f2f2;
-        }
-        .chat-input {
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            background: #fff;
-            padding: 3px 20px;
-            border-top: 1px solid #ddd;
-        }
-        .chat-input textarea {
-            height: 55px;
-            width: 100%;
-            border: none;
-            outline: none;
-            resize: none;
-            max-height: 180px;
-            padding: 15px 15px 15px 0;
-            font-size: 0.95rem;
-        }
-        .chat-input span {
-            align-self: flex-end;
-            color: #724ae8;
-            cursor: pointer;
-            height: 55px;
-            display: flex;
-            align-items: center;
-            visibility: hidden;
-            font-size: 1.35rem;
-        }
-        .chat-input textarea:valid ~ span {
-            visibility: visible;
-        }
-        
-        
-        @media (max-width: 490px) {
-            .chatbot {
-                right: 0;
-                bottom: 0;
-                height: 100%;
-                border-radius: 0;
-                width: 100%;
-            }
-            .chatbot .chatbox {
-                height: 90%;
-                padding: 25px 15px 100px;
-            }
-            .chatbot .chat-input {
-                padding: 5px 15px;
-            }
-            .chatbot header span {
-                display: block;
-            }
-        }
+        /* SUCCESS STORIES */
+.success-section {
+    padding: 80px 0;
+    background: #ffffff;
+}
 
-       
+.startup-card {
+    background: #f7f7f7;
+    border-radius: 14px;
+    padding: 30px;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.Celestral{
+    background-color: black;
+}
+.startup-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 32px rgba(0,0,0,0.12);
+}
+
+.startup-card img {
+    max-height: 60px;
+    margin-bottom: 20px;
+}
+
+.startup-card h5 {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.startup-card p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.startup-tag {
+    display: inline-block;
+    font-size: 12px;
+    padding: 6px 14px;
+    border-radius: 20px;
+    background: #000;
+    color: #fff;
+    font-weight: 500;
+}
+/* MENTORS SECTION */
+.mentors-section {
+    padding: 80px 0;
+    background: #ffffff;
+}
+
+.mentors-subtitle {
+    text-align: center;
+    color: #666;
+    font-size: 15px;
+    margin-bottom: 50px;
+}
+
+/* Mentor Card */
+.mentor-card {
+    background: #111;
+    border-radius: 18px;
+    height: 400px;
+    padding: 25px;
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mentor-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+}
+
+.mentor-card img {
+    width: 100%;
+    border-radius: 14px;
+    margin-bottom: 18px;
+}
+
+.mentor-card h5 {
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.mentor-card span {
+    color: #bbb;
+    font-size: 13px;
+}
+
+/* LinkedIn Icon */
+.mentor-linkedin {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: #fff;
+    color: #000;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.mentor-linkedin:hover {
+    background: #0A66C2;
+    color: #fff;
+    transform: scale(1.1);
+}
+
         .idea-section {
             padding: 50px 20px;
             background-color: #fff;
